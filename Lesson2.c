@@ -1,6 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 
+double dot_product(const double inputs[], const double weights[], int n)
+{
+    double sum = 0.0;
+    for(int i = 0; i < n; i++)
+    {
+        sum = sum + inputs[i] * weights[i];
+    }
+    return sum;
+}
+
 int main()
 {
     // Step 1 : Calculation for fixed input & weight
@@ -15,14 +25,12 @@ int main()
     double inputs[100];
     double weights[100]; 
     double bias;
-    double sum = 0.0;
-    double z[100];
+    // double sum = 0.0;
+    // double z[100];
 
     int n;
 
-    printf("Enter the no. of inputs: ");
-    scanf("%d", &n);
-    printf("Enter the no. of weights: ");
+    printf("Enter the no. of inputs and weights: ");
     scanf("%d", &n);
 
     for(int i = 0; i < n; i++)
@@ -40,6 +48,7 @@ int main()
     printf("Type the value of bias: ");
     scanf("%lf", &bias);
 
+    /*
 
     for(int i = 0; i < n; i++)
     {
@@ -50,7 +59,13 @@ int main()
     double weighted_output = sum + bias;
     printf("Weighted output: %lf\n", weighted_output);
 
+    */
+
     // Step 3: Dot product
+
+    double sum = dot_product(inputs, weights, n);
+    double weighted_output = sum + bias;
+    printf("Weighted output: %lf\n", weighted_output);
 
     return 0;
 }
