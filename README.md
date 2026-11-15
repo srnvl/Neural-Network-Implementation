@@ -36,4 +36,17 @@ where 'x' is the number of that particular lesson
     - Tanh
     - Leaky ReLU
 
-#### Lesson 4 - Building Your First Neuron
+#### Lesson 4 - Building Your First Neuron  
+  
+- Created a reusable Neuron structure using C structs.  
+- Implemented dynamic memory allocation for neuron weights.  
+- Added support for configurable activation functions:  
+    - Linear
+    - ReLU
+    - Sigmoid
+    - Tanh
+    - Leaky ReLU
+- Implemented neuron initialization and memory management. 
+- Implemented forward propagation to calculate neuron outputs using inputs, weights, and bias.
+- Integrated user input to configure neurons dynamically.
+- Implemented memory cleanup to prevent memory leaks.
