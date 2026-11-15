@@ -10,6 +10,16 @@ struct Neuron
     double bias;
 };
 
+double dot_product(const struct Neuron* neuron, int n)
+{
+    double z = 0.0;
+    for(int i = 0; i < n; i++)
+    {
+        z = z + (neuron->input[i] * neuron->weight[i]);
+    }
+    return z;
+}
+
 double activation_functions(double z)
 {   
     int select;
@@ -51,7 +61,6 @@ int main(){
     
     struct Neuron neuron;
     int n;
-    double z = 0.0;
 
     printf("Please enter the number of inputs and weights: ");
     scanf("%d", &n);
@@ -71,13 +80,7 @@ int main(){
     printf("Enter a value for bias: ");
     scanf("%lf", &neuron.bias);
 
-    // Calculate weighted sum z
-    for(int i = 0; i < n; i++)
-    {
-        z = z + (neuron.input[i] * neuron.weight[i]);
-    }
-    z = z + neuron.bias;
-
+    double z = dot_product(&neuron, n) + neuron.bias;
     double output = activation_functions(z);  
     printf("Neuron Output: %lf\n", output);
 

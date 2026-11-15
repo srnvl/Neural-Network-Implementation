@@ -1,4 +1,4 @@
-// 2. The Mathematics of a Neuron
+// 2. The Mathematics Of A Neuron
 
 #include <stdio.h>
 #include <math.h>
