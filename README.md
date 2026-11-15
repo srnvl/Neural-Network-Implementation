@@ -1,7 +1,8 @@
 # Implementation of Neural Networks from scratch
 
 Implementing my own Neural Networks in C    
-Has a set of lessons going from absolute zero to finally implementing a neural network.
+Has a set of lessons going from absolute zero to finally implementing a neural network.  
+
 
 ## Lesson 1 - Define a neuron and implement basic neuron with activation functions
 
