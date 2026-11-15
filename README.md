@@ -50,3 +50,5 @@ where 'x' is the number of that particular lesson
 - Implemented forward propagation to calculate neuron outputs using inputs, weights, and bias.
 - Integrated user input to configure neurons dynamically.
 - Implemented memory cleanup to prevent memory leaks.
+
+#### Lesson 5 - 
