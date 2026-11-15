@@ -2,24 +2,30 @@
 
 Implementing neural networks from scratch using C.
 
-This project consists of a series of lessons that go from the fundamentals of neural networks to eventually implementing a neural network from scratch.
+This project consists of a series of lessons that go from the fundamentals of neural networks to eventually implementing a neural network from scratch.  
 
-## List of Contents  
+In order to run each lesson, please use:  
+> gcc lessonx.c -o lesson  
+> ./lesson      
 
-### Module 1 - Understanding the fundamentals
+where 'x' is the number of that particular lesson  
 
-#### Lesson 1 - What is a Neuron?
+## List Of Contents  
+
+### Module 1 - Understanding The Tundamentals
+
+#### Lesson 1 - What Is A Neuron?
 
 - Defined a basic neuron.
 - Implemented ReLU and Sigmoid activation functions.
 
-#### Lesson 2 - The Mathematics of a Neuron
+#### Lesson 2 - The Mathematics Of A Neuron
 
 - Implemented calculations using fixed inputs and weights.
 - Implemented calculations using variable inputs and weights.
 - Implemented the dot product.
 
-#### Lesson 3 - Activation functions  
+#### Lesson 3 - Activation Functions  
 
 - Implemented various activation functions:  
     - Linear 
@@ -29,3 +35,5 @@ This project consists of a series of lessons that go from the fundamentals of ne
     - Binary Step
     - Tanh
     - Leaky ReLU
+
+#### Lesson 4 - Building Your First Neuron
