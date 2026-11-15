@@ -4,7 +4,6 @@
 #include <math.h>
 
 struct Neuron{
-
     double weight1;
     double weight2;
     double bias;   

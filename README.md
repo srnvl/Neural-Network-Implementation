@@ -19,4 +19,13 @@ This project consists of a series of lessons that go from the fundamentals of ne
 - Implemented calculations using variable inputs and weights.
 - Implemented the dot product.
 
-#### Lesson 3 - Activation functions
+#### Lesson 3 - Activation functions  
+
+- Implemented various activation functions:  
+    - Linear 
+    - ReLU
+    - Sigmoid
+    - Step
+    - Binary Step
+    - Tanh
+    - Leaky ReLU
