@@ -6,7 +6,7 @@ This project consists of a series of lessons that go from the fundamentals of ne
 
 ## List of Contents  
 
-### Module 1
+### Module 1 - Understanding the fundamentals
 
 #### Lesson 1 - Defining a Neuron
 
