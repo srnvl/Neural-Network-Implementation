@@ -4,7 +4,7 @@ Implementing neural networks from scratch using C.
 
 This project consists of a series of lessons that go from the fundamentals of neural networks to eventually implementing a neural network from scratch.
 
-## Lessons  
+## List of Contents  
 
 ### Module 1
 
