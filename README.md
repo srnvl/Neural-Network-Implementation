@@ -12,7 +12,7 @@ where 'x' is the number of that particular lesson
 
 ## List Of Contents  
 
-### Module 1 - Understanding The Tundamentals
+### Module 1 - Understanding The Fundamentals
 
 #### Lesson 1 - What Is A Neuron?
 
