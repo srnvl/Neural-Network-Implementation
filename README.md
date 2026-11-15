@@ -1,15 +1,18 @@
-# Implementation of Neural Networks from scratch
+# Implementation of Neural Networks from Scratch
 
-Implementing my own Neural Networks in C    
-Has a set of lessons going from absolute zero to finally implementing a neural network.  
+Implementing neural networks from scratch using C.
 
+This project consists of a series of lessons that go from the fundamentals of neural networks to eventually implementing a neural network from scratch.
 
-## Lesson 1 - Define a neuron and implement basic neuron with activation functions
+## Lessons
 
-* Implemented ReLU and Sigmoid activation functions
+### Lesson 1 - Defining a Neuron and Implementing Activation Functions
 
-## Lesson 2 - Calculation for fixed and variable inputs and weights and dot product implementation 
+- Defined a basic neuron.
+- Implemented ReLU and Sigmoid activation functions.
 
-* Calculation for fixed inputs & weights
-* Calculation for variable inputs & weights
-* Implementation of dot product 
+### Lesson 2 - Calculations with Fixed and Variable Inputs and Weights
+
+- Implemented calculations using fixed inputs and weights.
+- Implemented calculations using variable inputs and weights.
+- Implemented the dot product.
