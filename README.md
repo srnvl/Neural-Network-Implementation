@@ -8,7 +8,7 @@ This project consists of a series of lessons that go from the fundamentals of ne
 
 ### Module 1 - Understanding the fundamentals
 
-#### Lesson 1 - Defining a Neuron
+#### Lesson 1 - What is a Neuron?
 
 - Defined a basic neuron.
 - Implemented ReLU and Sigmoid activation functions.
