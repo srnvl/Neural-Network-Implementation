@@ -1,3 +1,5 @@
+// What is a Neural Network?
+
 #include <stdio.h>
 #include <math.h>
 
@@ -25,7 +27,7 @@ double activate(struct Neuron* neuron, double x1, double x2)
                 printf("Invalid selection of activation function!");
                 return -1;
         }
-    }
+}
 
 int main()
 {
