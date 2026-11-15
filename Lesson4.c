@@ -67,6 +67,22 @@ int neuron_init(Neuron *neuron, int input_count, ActivationType activation)
     return 1;
 }
 
+// Updates a weight for the neuron safely (Returns int for success/failure)
+int neuron_set_weight(Neuron *neuron, int index, double value)
+{
+    if (neuron == NULL || neuron->weights == NULL)
+        return 0;
+    
+    if (index < 0 || index >= neuron->input_count)
+    {
+        printf("Error: Weight index %d out of bounds (0 to %d).\n", index, neuron->input_count - 1);
+        return 0; // Failure
+    }
+
+    neuron->weights[index] = value;  
+    return 1; // Success
+}
+
 // Calculate neuron output
 double neuron_forward(const Neuron *neuron, const double inputs[])
 {
@@ -113,14 +129,22 @@ int main(void)
         return 1;
     }
 
-    // Read weights
+    // Read weights using the safe setter function
     for (int i = 0; i < n; i++)
     {
+        double temp_weight;
         printf("Enter weight %d: ", i + 1);
 
-        if (scanf("%lf", &neuron.weights[i]) != 1)
+        if (scanf("%lf", &temp_weight) != 1)
         {
             printf("Invalid weight.\n");
+            neuron_destroy(&neuron);
+            return 1;
+        }
+
+        if (!neuron_set_weight(&neuron, i, temp_weight))
+        {
+            printf("Failed to set weight.\n");
             neuron_destroy(&neuron);
             return 1;
         }
