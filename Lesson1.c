@@ -1,4 +1,4 @@
-// What is a Neural Network?
+// 1. What is a Neural Network?
 
 #include <stdio.h>
 #include <math.h>

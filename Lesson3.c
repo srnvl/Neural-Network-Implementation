@@ -1,4 +1,4 @@
-// Activation Functions
+// 3. Activation Functions
 
 #include <stdio.h>
 #include <math.h>
