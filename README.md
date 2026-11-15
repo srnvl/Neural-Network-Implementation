@@ -51,4 +51,4 @@ where 'x' is the number of that particular lesson
 - Integrated user input to configure neurons dynamically.
 - Implemented memory cleanup to prevent memory leaks.
 
-#### Lesson 5 - 
+#### Lesson 5 - Building a Neural Network
