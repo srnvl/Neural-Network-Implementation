@@ -67,17 +67,14 @@ int neuron_init(Neuron *neuron, int input_count, ActivationType activation)
     return 1;
 }
 
-// Updates a weight for the neuron safely (Returns int for success/failure)
+// Updates a weight for the neuron safely 
 int neuron_set_weight(Neuron *neuron, int index, double value)
 {
     if (neuron == NULL || neuron->weights == NULL)
         return 0;
     
     if (index < 0 || index >= neuron->input_count)
-    {
-        printf("Error: Weight index %d out of bounds (0 to %d).\n", index, neuron->input_count - 1);
         return 0; // Failure
-    }
 
     neuron->weights[index] = value;  
     return 1; // Success
