@@ -52,3 +52,13 @@ where 'x' is the number of that particular lesson
 - Implemented memory cleanup to prevent memory leaks.
 
 #### Lesson 5 - Building a Neural Network
+
+- Introduced the Layer structure to group multiple neurons into a single layer.  
+- Implemented dynamic memory allocation for layers and their individual neurons.
+- Implemented layer initialization with configurable neuron counts, input sizes, and activation functions.
+- Added functionality to safely configure individual neuron weights and biases.
+- Implemented forward propagation for individual neurons.
+- Implemented layer forward propagation to calculate the outputs of all neurons within a layer.
+- Demonstrated how multiple neurons process the same input vector to produce an output vector.
+- Implemented memory management and cleanup for dynamically allocated neurons and layers.
+- Tested a layer containing three neurons, each receiving two inputs and using ReLU activation.
