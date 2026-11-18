@@ -22,10 +22,10 @@ typedef struct {
     ActivationType activation;
 } Layer;
 
-// typedef struct {
-//     Layer *layers;
-//     int layer_count;
-// } NeuralNetwork;
+typedef struct {
+    Layer *layers;
+    int layer_count;
+} NeuralNetwork;
 
 // Activation function implementation
 double activate(double z, ActivationType type) {
